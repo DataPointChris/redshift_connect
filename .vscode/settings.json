@@ -1,0 +1,15 @@
+{
+    "jupyter.jupyterServerType": "local",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "data-warehouse.cwmvoana36md.us-east-2.redshift.amazonaws.com",
+            "port": 5439,
+            "driver": "Redshift Driver (Dedicated ver)",
+            "name": "data-warehouse-dev",
+            "database": "dev",
+            "username": "chris-birch-admin",
+            "password": "jykpaz-vUqbow-hacpy8"
+        }
+    ]
+}
