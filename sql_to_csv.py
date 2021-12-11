@@ -13,8 +13,8 @@ sql_file_path = pathlib.Path(f'sql/{filename}')
 basename = sql_file_path.stem
 
 print('Connecting to Redshift')
-cnxn = RedshiftConnection().connect()
-cursor = cnxn.cursor()
+connection = RedshiftConnection().connect()
+cursor = connection.cursor()
 
 with open(sql_file_path, 'r') as query:
     sql = query.read()

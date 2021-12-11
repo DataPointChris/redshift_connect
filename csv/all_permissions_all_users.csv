@@ -1,4 +1,4 @@
-,b'usename',b'schemaname',b'create_permission',b'usage_permission'
+,usename,schemaname,create_permission,usage_permission
 0,rdsdb,pg_catalog,True,True
 1,chris-birch-admin,pg_catalog,True,True
 2,shipping,pg_catalog,False,True
