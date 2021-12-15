@@ -2,7 +2,6 @@ import argparse
 import pathlib
 from redshift_connection import RedshiftConnection
 
-
 parser = argparse.ArgumentParser(
     description="Enter a filename in sql folder.  Returns 'name.csv' in csv folder"
 )
