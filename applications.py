@@ -1,50 +1,7 @@
-APPLICATIONS = {
-    'core': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-    'c360': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-    'ccpa': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-    'ecsc': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-    'emdm': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-    'fdw': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-    'irm': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-    'leo': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-    'ndw': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-    'nsh': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-    'pasa': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-    'p360': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-    'peff': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-    'q360': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-    'vdw': {
-        'service_roles': ['integrate', 'tableau-egress', 'powerbi-egress'],
-    },
-}
+service_roles = ['ingest', 'transform', 'tableau-egress', 'powerbi-egress']
+app_names = ['core', 'google', 'facebook', 'airbnb', 'github', 'microsoft']
+
+APPLICATIONS = {app_name: {'service_roles': service_roles} for app_name in app_names}
 
 
 class Application:
